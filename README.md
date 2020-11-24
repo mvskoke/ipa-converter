@@ -14,16 +14,17 @@ The first 3 arguments (excluding 'python') must ALWAYS be in the above order. Fl
 The romanization file should map romanization characters to IPA equivalents, one-to-one,
 one per line, in this format: 
 
-    romanization(s)>IPA
+    romanization>IPA
+    anotherchar>IPA
 
 It may be a simple text file, or a .json file. If using a .txt file, whitespaces will be ignored. .JSON files are
 recommended for more complex or detailed romanization schemes.
 Comments can be made with semicolon ';'. In-line comments are not possible; all lines with a ';' will beautomatically ignored.
-It is recommended that you do not include romanization>IPA pairs if they are equivalent, e.g. /p/ <p>.
+It is recommended that you do not include romanization>IPA pairs if they are equivalent, e.g. /p/ \<p\>.
 
  - Di/trigraphs and longer are permitted in the romanization characters.
  - Likewise, colons, equal signs, and hyphens are also permitted.
- - However, the right carot > and semicolon ; are not permitted.
+ - However, the right carot \> and semicolon ; are not permitted.
 
 
 # IMPLEMENTING ALLOPHONY
