@@ -1,11 +1,12 @@
 # ipa-converter
-USAGE: $ python ipa_converter.py romanization.txt[.json] [input_lexicon.txt] [-o] [--ipa-romz]
+USAGE: $ python ipa_converter.py romanization.txt [--lexicon input_lexicon.txt] [-o] [--ipa-romz]
 
 The IPA converter will convert romanizations/orthographies to IPA, or vice versa. Unicode supported.
 Romanization to IPA is the default mode, but you can indicate otherwise, with the '--ipa-romz' flag.
 
 Additionally the '-o' flag will output a converted lexicon file to a new file. It will still print the
-conversion to the terminal if the flag is provided
+conversion to the terminal if the flag is provided. Do not provide an output file name. You will
+provide it during execution.
 
 The first 3 arguments (excluding 'python') must ALWAYS be in the above order. Flags can be in any order.
 
